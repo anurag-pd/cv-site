@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+a {
+  color: #1C9C94;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+article {
+  padding:0 1em;
+}
+
+section{
+  margin: 1em;
+  padding: 1em;
+}
+
+header, main, footer {
+  margin: 0 auto;
+}
+
+header {
+  padding: 2em;
+  text-align: center;
+  background-color: #000000;
+  background-image: linear-gradient(to top, #000000 0%, #414141 74%);
+  background-size: cover;
+  background-position: fixed;
+  color: white;
+}
+
+header section {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+header img {
+  border-radius: 20%;
+  max-width: 250px;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h3, h4 {
+  font-weight: 900;
+}
+
+main {
+  max-width: 1140px;
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+}
+
+main section:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.fab,.fa {
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+
+a .fab,.fa{
+  color: white;
+}
+
+.course, .skills,.project {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.project .title {
+
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 33%;
+}
+
+.project .descrition {
+  -ms-flex: 0 0 66.6%;
+  flex: 0 0 66.6%;
+  max-width: 66.6%;
+}
+
+.project .descrition p {
+  padding-left: 1em;
+}
+
+.course .title {
+
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 33%;
+}
+
+.course .descrition {
+  -ms-flex: 0 0 66.6%;
+  flex: 0 0 66.6%;
+  max-width: 66.6%;
+}
+
+.course .descrition p {
+  padding-left: 1em;
+}
+
+.skills .column {
+  -ms-flex: 0 0 33%%;
+  flex: 0 0 33%;
+  max-width: 33%;
+}
+
+.skills .column ul {
+  list-style-type: none;
+}
+
+.skills .column ul > li:before {
+  content: "►";
+  padding-right: 0.5em;
+  color: #509e98;
+}
+
+footer {
+ padding: 1em 1.5em;
+ background: #A7B8BF;
+ color: white;
+ text-align: right;
+}
+ul.sides-description li:before{
+  content: "✔";
+  padding-right: 0.5em;
+  color: #509e98;
+}
+
+@media only screen and (max-width: 768px) {
+  .course {
+    display: block;
+  }
+
+  .course .title, .course .descrition {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .skills {
+    display: block;
+  }
+
+  .skills .column {
+    max-width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+#topScroll {
+  display: none;
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none;
+  background-color: red; 
+  color: white; 
+  cursor: pointer;
+  padding: 15px; 
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#topScroll:hover {
+  background-color: #555; 
+}
