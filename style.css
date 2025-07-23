@@ -1,4 +1,60 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+/* Education Section Resume Style */
+.education-list {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.education-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.3em 0 0.3em 0;
+  font-size: 1em;
+}
+.education-item:last-child {
+  border-bottom: none;
+}
+.edu-left {
+  flex: 1 1 60%;
+  min-width: 0;
+}
+.edu-right {
+  flex: 0 0 180px;
+  text-align: right;
+  min-width: 120px;
+  font-size: 1em;
+}
+.edu-school {
+  font-weight: bold;
+  font-size: 1.08em;
+}
+.edu-degree {
+  font-style: italic;
+  font-size: 0.98em;
+  color: #444;
+}
+.edu-cgpa {
+  font-size: 1em;
+  font-weight: 500;
+}
+.edu-year {
+  font-size: 0.95em;
+  color: #666;
+}
+.edu-rank {
+  font-weight: 500;
+}
+@media only screen and (max-width: 700px) {
+  .education-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 1em;
+  }
+  .edu-right {
+    text-align: left;
+    margin-top: 0.2em;
+  }
+}
 
 /* Three-column Skills Bins Layout */
 .skills-bins-3col {
