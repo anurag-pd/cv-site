@@ -1,3 +1,65 @@
+/* Three-column Skills Bins Layout */
+.skills-bins-3col {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.skills-bin-col {
+  flex: 1 1 0;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.skills-bin {
+  padding: 1em 1.2em 1.2em 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.skills-bin h4 {
+  margin-top: 0;
+  margin-bottom: 0.7em;
+  color: #111;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.skills-bin ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.skills-bin ul li {
+  padding-left: 0.5em;
+  margin-bottom: 0.3em;
+  position: relative;
+  color: #222;
+  font-weight: normal;
+}
+
+.skills-bin ul li:before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  font-size: 0.9em;
+  top: 0.1em;
+}
+
+@media only screen and (max-width: 900px) {
+  .skills-bins-3col {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .skills-bin-col {
+    min-width: 0;
+  }
+}
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 body {
@@ -95,15 +157,27 @@ a .fab,
 .course,
 .skills,
 .project {
+  display: block;
+}
+
+.skills,
+.course {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-.project .title {
   -ms-flex: 0 0 33.3%;
   flex: 0 0 33.3%;
   max-width: 33%;
+}
+
+.project h4 {
+  margin-bottom: 0.1em;
+}
+
+.project h5 {
+  margin-top: 0.1em;
+  margin-bottom: 0.2em;
 }
 
 .project .descrition {

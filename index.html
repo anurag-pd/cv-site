@@ -27,7 +27,7 @@
         <p>
           Hello There! <br />
           Anurag Here 👋 <br />
-          Data Scientist + Data Engineer | Python & AI/ML | Scalable Pipelines &
+          Data Engineer + Data Scientist| Python & AI/ML | Scalable Pipelines &
           Real-Time Systems | Driving Growth in a Fast-Paced Environments
         </p>
         <a href="mailto:prasad.anurag.ap@gmail.com" target="_blank">
@@ -51,7 +51,7 @@
       <section>
         <p>
           I'm Anurag Prasad, a passionate technologist with a strong foundation
-          in Data Science, AI/ML, and Data Engineering. I specialize in building
+          in Data Engineering, Data Science, and AI/ML. I specialize in building
           scalable, intelligent systems that blend machine learning, real-time
           analytics, and production-grade data pipelines.
         </p>
@@ -139,46 +139,71 @@
         <article class="experience">
           <div class="title">
             <h4>Exactspace Technologies</h4>
-            <h5>Data Scientist | Bengaluru | June 2023 - Present</h5>
+            <h5>
+              Data Scientist (Working as Data Engineer) | Bengaluru | June 2023
+              - Present
+            </h5>
           </div>
           <div class="description">
             <ul>
               <li>
-                <strong
-                  >TECH STACK: Python, Machine Learning, MongoDB, MQTT, Redis,
-                  API</strong
-                >
+                Architected a high-throughput
+                <strong>real-time data ingestion pipeline</strong> handling
+                <strong>lakhs of sensor readings/min</strong> via
+                <strong>13 Python microservices</strong> with
+                <strong>MQTT</strong>, Redis, and Kubernetes; enabled anomaly
+                detection and deviation tracking.
               </li>
               <li>
-                Handle company's USP MQTT-based real-time AI product generating
-                ~80% of revenue. Increased customer base from ~70 to 200+ due to
-                stability.
+                Optimized system with
+                <strong>shared MQTT subscriptions</strong> and Redis caching,
+                reducing <strong>pod count by 80%</strong>,
+                <strong>CPU usage by 70–80%</strong>, and decommissioning
+                <strong>5 VMs</strong>.
               </li>
               <li>
-                Rewrote microservice architecture, reducing CPU, RAM usage, and
-                service count by up to 85%. Optimized load balancing for better
+                Implemented
+                <strong>Horizontal Pod Autoscaling (HPA)</strong> for dynamic
+                scaling under fluctuating loads, ensuring consistent real-time
                 performance.
               </li>
               <li>
-                Led a team of 8 to complete two Adani Group projects, using
-                Python ML for optimized boiler performance, controlled metal
-                temperature, and reduced mill choking by 80%.
+                Built a custom <strong>time-series database in Rust</strong>,
+                persisting per-minute telemetry in
+                <strong>.bin files</strong> using
+                <strong
+                  >threaded write architecture and memory-mapped I/O</strong
+                >
+                for fast concurrent reads and mutex locking.
               </li>
               <li>
-                Developed a full-stack Python module with AngularJS frontend to
-                detect historic insights from timeseries data, achieving 1000x
-                speed improvement.
+                Developed a high-performance
+                <strong>query engine with Tokio + Warp</strong>, supporting
+                real-time access to sensor data with
+                <strong>low-latency transformations</strong>.
               </li>
               <li>
-                Redesigned email notification module by replacing Pandas +
-                CSV-based logic with an optimized SQL-only approach, improving
-                performance and scalability.
+                Designed a flexible
+                <strong>threaded aggregation pipeline DSL with serde</strong>,
+                enabling chained operations (e.g., mean → diff → scale) with
+                support for bucketing and gap filling.
               </li>
               <li>
-                Analyzed 1-year per-minute industrial time series data using
-                Pandas and Matplotlib; implemented DBSCAN and Isolation Forest
-                for anomaly detection, leading to early identification of system
-                faults.
+                Migrated alerting logic from <strong>Pandas+CSV</strong> to
+                <strong>SQL-based pipelines</strong>, improving reliability and
+                reducing latency under high-frequency loads.
+              </li>
+              <li>
+                Delivered the company’s
+                <strong>core revenue-generating module</strong>, driving
+                <strong>80% of total income</strong> (per leadership) and
+                enabling <strong>3x customer growth</strong>.
+              </li>
+              <li>
+                Built a high-throughput
+                <strong>time-series analytics module</strong> for multi-year
+                industrial data, reducing insight generation time from
+                <strong>days to hours</strong>.
               </li>
             </ul>
           </div>
@@ -191,12 +216,23 @@
           <div class="description">
             <ul>
               <li>
-                Led a complete Python codebase rewrite, boosting efficiency by
-                over 50x and enhancing stability.
+                Refactored and optimized a
+                <strong>multi-file Python data pipeline module</strong>,
+                achieving a <strong>50x performance boost</strong> and
+                <strong>90% reduction in execution time</strong> by eliminating
+                redundant <strong>MongoDB API calls (n → 1)</strong> and
+                streamlining <strong>time-series data processing logic</strong>.
+                Improved
+                <strong
+                  >pipeline stability, accuracy, and long-term
+                  maintainability</strong
+                >.
               </li>
               <li>
-                Developed v2 of a multi-file module, reducing completion times
-                by 90%, MongoDB API calls from n to 1, and improving accuracy.
+                Developed <strong>anomaly detection pipelines</strong> using
+                <strong>DBSCAN</strong> and <strong>Isolation Forest</strong> on
+                structured <strong>time-series data</strong> for
+                <strong>early fault identification</strong>.
               </li>
             </ul>
           </div>
@@ -334,73 +370,103 @@
       </section>
       <section>
         <h3>Skills</h3>
-        <div class="skills">
-          <div class="column">
-            <ul>
-              <li>Python</li>
-              <li>FastAPI</li>
-              <li>SQLAlchemy</li>
-              <li>Jupyter Notebook</li>
-            </ul>
+        <div class="skills-bins skills-bins-3col">
+          <div class="skills-bin-col">
+            <div class="skills-bin">
+              <h4>Data Engineering</h4>
+              <ul>
+                <li>Data Pipelines</li>
+                <li>Real-time Streaming</li>
+                <li>MQTT</li>
+                <li>Kafka</li>
+                <li>Redis</li>
+                <li>SQL</li>
+                <li>Rust-based custom DB</li>
+                <li>Time-series Data</li>
+                <li>File I/O</li>
+                <li>ETL / ELT</li>
+                <li>Horizontal Pod Autoscaling</li>
+                <li>Microservices</li>
+                <li>JSON/CSV/SQL ingestion</li>
+              </ul>
+            </div>
+            <div class="skills-bin">
+              <h4>Backend & Infra</h4>
+              <ul>
+                <li>FastAPI</li>
+                <li>SQLAlchemy</li>
+                <li>Java</li>
+                <li>Quarkus</li>
+                <li>Kubernetes</li>
+                <li>Docker</li>
+                <li>AWS</li>
+                <li>REST APIs</li>
+                <li>CI/CD Concepts</li>
+                <li>Asynchronous Programming</li>
+                <li>Serialization / Deserialization</li>
+                <li>HLD / LLD</li>
+              </ul>
+            </div>
           </div>
-          <div class="column">
-            <ul>
-              <li>Java</li>
-              <li>Quarkus</li>
-              <li>Microservices</li>
-              <li>HLD / LLD</li>
-            </ul>
+          <div class="skills-bin-col">
+            <div class="skills-bin">
+              <h4>AI / ML</h4>
+              <ul>
+                <li>Python</li>
+                <li>PyTorch</li>
+                <li>Hugging Face Transformers</li>
+                <li>Scikit-learn</li>
+                <li>XGBoost</li>
+                <li>BERT</li>
+                <li>KeyBERT</li>
+                <li>BERTopic</li>
+                <li>RAG</li>
+                <li>LLMs</li>
+                <li>Anomaly Detection</li>
+                <li>ML / AI</li>
+                <li>Computer Vision</li>
+                <li>NLP</li>
+                <li>BERT models</li>
+                <li>Topic Modelling - KeyBERT, BERTTopic</li>
+              </ul>
+            </div>
+            <div class="skills-bin">
+              <h4>Data Science</h4>
+              <ul>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>Matplotlib</li>
+                <li>Seaborn</li>
+                <li>Jupyter Notebook</li>
+                <li>Streamlit</li>
+              </ul>
+            </div>
           </div>
-          <div class="column">
-            <ul>
-              <li>JavaScript</li>
-              <li>HTML/CSS</li>
-              <li>Vue.js</li>
-              <li>AngularJS</li>
-              <li>Lit.dev</li>
-            </ul>
-          </div>
-          <div class="column">
-            <ul>
-              <li>Scikit-learn</li>
-              <li>XGBoost</li>
-              <li>Pandas</li>
-              <li>NumPy</li>
-              <li>Matplotlib</li>
-              <li>Seaborn</li>
-              <li>ML / AI</li>
-            </ul>
-          </div>
-          <div class="column">
-            <ul>
-              <li>PyTorch</li>
-              <li>Hugging Face Transformers</li>
-              <li>Computer Vision</li>
-              <li>NLP</li>
-              <li>BERT models</li>
-              <li>Topic Modelling - KeyBERT, BERTTopic</li>
-            </ul>
-          </div>
-          <div class="column">
-            <ul>
-              <li>PostgreSQL</li>
-              <li>MySQL</li>
-              <li>SQLite</li>
-              <li>MongoDB</li>
-              <li>Redis</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-          <div class="column">
-            <ul>
-              <li>AWS</li>
-              <li>Docker</li>
-              <li>Kafka</li>
-              <li>MQTT</li>
-              <li>Git</li>
-              <li>VS Code</li>
-              <li>REST APIs</li>
-            </ul>
+          <div class="skills-bin-col">
+            <div class="skills-bin">
+              <h4>Databases</h4>
+              <ul>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>SQLite</li>
+                <li>MongoDB</li>
+                <li>Redis</li>
+                <li>Vector DB (Chroma)</li>
+                <li>Custom Binary Formats</li>
+              </ul>
+            </div>
+            <div class="skills-bin">
+              <h4>General / Other</h4>
+              <ul>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+                <li>Vue.js</li>
+                <li>AngularJS</li>
+                <li>Lit.dev</li>
+                <li>VS Code</li>
+                <li>Git</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
