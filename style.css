@@ -31,7 +31,6 @@
 .edu-degree {
   font-style: italic;
   font-size: 0.98em;
-  color: #444;
 }
 .edu-cgpa {
   font-size: 1em;
@@ -39,7 +38,6 @@
 }
 .edu-year {
   font-size: 0.95em;
-  color: #666;
 }
 .edu-rank {
   font-weight: 500;
@@ -81,7 +79,6 @@
 .skills-bin h4 {
   margin-top: 0;
   margin-bottom: 0.7em;
-  color: #111;
   font-size: 1.1em;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -97,7 +94,6 @@
   padding-left: 0.5em;
   margin-bottom: 0.3em;
   position: relative;
-  color: #222;
   font-weight: normal;
 }
 
@@ -280,7 +276,7 @@ a .fab,
 }
 
 .skills .column ul > li:before {
-  content: "►";
+  content: "-";
   padding-right: 0.5em;
   color: #509e98;
 }
